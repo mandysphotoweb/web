@@ -243,10 +243,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 5vh;
+  padding-top: 5vh;
 }
 
 .bio {
-  width: 45%;
+  width: 50%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +265,7 @@ header {
 }
 
 .myPic {
-  width: 45%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,13 +279,10 @@ header {
 }
 
 .myPic img {
-  margin: auto;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 20%;
-     object-position: 0 20%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .title {
