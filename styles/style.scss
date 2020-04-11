@@ -514,4 +514,29 @@ $gray-text: #2b2b2b;
     color: white;
     text-align: center;
   }
+
+  .contact form {
+    padding: 1rem 0.5rem;
+    box-shadow: 0px 2.5px 2.5px rgba(0, 0, 0, 0.2),
+      0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+  }
+
+  .contact {
+    margin-top: 0rem;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    margin: 1rem;
+  }
+
+  .contact form textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .contact label {
+    font-size: 1.5rem;
+  }
 }
