@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Gallery | Mandy's Photography</title>
-  </head>
 
-  <body>
-    <header class="fullView">
-      <div class="logo">
-        <img src="../icons/logomandy.png" alt="" />
-      </div>
-      <div class="nav">
-        <a href="../index.html">Home</a>
-        <a href="../Gallery/index.html">Gallery</a>
-        <a class="active" href="../Contact/index.html">Contact</a>
-      </div>
-      <div class="social">
-        <a href="#"
-          ><img
-            class="socialMedia"
-            src="../icons/iconmonstr-facebook-5-48.png"
-            alt=""
-        /></a>
-        <a href="#"
-          ><img
-            class="socialMedia"
-            src="../icons/iconmonstr-instagram-15-48.png"
-            alt=""
-        /></a>
-        <a href="#"
-          ><img
-            class="socialMedia"
-            src="../icons/iconmonstr-whatsapp-1-48.png"
-            alt=""
-        /></a>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <title>Gallery | Mandy's Photography</title>
+</head>
 
-    <section class="contact">
-      <form action="https://formspree.io/xgellnoe" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required />
-        <label for="email">Email</label>
-        <input type="email" name="_replyto" id="email" required />
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <button type="submit" value="Send">Submit</button>
-      </form>
-    </section>
+<body>
+  <header class="main-head">
+    <div id="logo"><img src="../icons/logomandy.png" alt="logo" /></div>
+    <div id="span">
+      <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;
+      </span>
+    </div>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../index.html">Home</a>
+    <a href="../Gallery/index.html">Gallery</a>
+    <a href="../Contact/index.html">Contact</a>
+    <a href="instagram.com"><img class="social" src="../icons/iconmonstr-instagram-15-48.png" alt="" /></a>
+    <a href="instagram.com"><img class="social" src="../icons/iconmonstr-facebook-5-48.png" alt="" /></a>
+    <a href="instagram.com"><img class="social" src="../icons/iconmonstr-whatsapp-1-48.png" alt="" /></a>
+  </div>
+  <header class="fullView">
+    <div class="logo">
+      <img src="../icons/logomandy.png" alt="" />
+    </div>
+    <div class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../Gallery/index.html">Gallery</a>
+      <a class="active" href="../Contact/index.html">Contact</a>
+    </div>
+    <div class="social">
+      <a href="#"><img class="socialMedia" src="../icons/iconmonstr-facebook-5-48.png" alt="" /></a>
+      <a href="#"><img class="socialMedia" src="../icons/iconmonstr-instagram-15-48.png" alt="" /></a>
+      <a href="#"><img class="socialMedia" src="../icons/iconmonstr-whatsapp-1-48.png" alt="" /></a>
+    </div>
+  </header>
 
-    <section class="footer">
-      <div class="foot">Mandy's Photo &copy; 2020 by JaviC Dev</div>
-    </section>
-  </body>
+  <section class="contact">
+    <form action="https://formspree.io/xgellnoe" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">Email</label>
+      <input type="email" name="_replyto" id="email" required />
+      <label for="message">Message</label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <button type="submit" value="Send">Submit</button>
+    </form>
+  </section>
+
+  <section class="footer">
+    <div class="foot">Mandy's Photo &copy; 2020 by JaviC Dev</div>
+  </section>
+  <script>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "225px";
+    }
+  </script>
+</body>
+
 </html>
