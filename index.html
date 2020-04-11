@@ -1,190 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Welcome | Mandy's Photography</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="./icons/logomandy.png" alt="" />
-      </div>
-      <div class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="./Gallery">Gallery</a>
-        <a href="./Contact/index.html">Contact</a>
-      </div>
-      <div class="social">
-        <a href="#"
-          ><img
-            class="socialMedia"
-            src="./icons/iconmonstr-facebook-5-48.png"
-            alt=""
-        /></a>
-        <a href="#"
-          ><img
-            class="socialMedia"
-            src="./icons/iconmonstr-instagram-15-48.png"
-            alt=""
-        /></a>
-        <a href="#"
-          ><img
-            class="socialMedia"
-            src="./icons/iconmonstr-whatsapp-1-48.png"
-            alt=""
-        /></a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mandy is a proffesional photographer, he takes every shot seriously.">
+    <meta name="robots" content="index,follow">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Mandy | Photography</title>
+</head>
+
+<body>
+    <header class="main-head">
+        <div id="logo"><img src="./icons/logomandy.png" alt="logo"></div>
+        <div id="span"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></div>
     </header>
-    <section class="main">
-      <div class="bio">
-        <div class="title">
-          <h2>Welcome</h2>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+        <a href="instagram.com"><img class="social" src="./icons/iconmonstr-instagram-15-48.png" alt=""></a>
+        <a href="instagram.com"><img class="social" src="./icons/iconmonstr-facebook-5-48.png" alt=""></a>
+        <a href="instagram.com"><img class="social" src="./icons/iconmonstr-whatsapp-1-48.png" alt=""></a>
+    </div>
+    <section class="main-intro">
+        <div class="intro-text">
+            <h1>Welcome</h1>
+            <p>My name is Armando Martinez. I been a proffesional photographer for over 10 years.
+                Capturing special momments is amazing.
+            </p>
         </div>
-        <div class="aboutMe">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            animi, iusto, architecto labore reiciendis modi voluptatem quasi
-            nihil similique sunt dolores nisi, natus eos iste odio ipsam eveniet
-            suscipit quibusdam dolorem. Suscipit eos laborum reprehenderit omnis
-            labore necessitatibus quaerat consequuntur, eligendi tempora nulla
-            ea atque possimus ipsum qui totam assumenda reiciendis esse.
-            Exercitationem enim, non nesciunt quas possimus facere vitae
-            voluptatem dolor doloremque earum voluptatum modi quisquam quis ut
-            veritatis!
-          </p>
+        <div class="intro-img">
+            <img src="./imgs/profile.jpg" alt="Profile">
         </div>
-      </div>
-      <div class="myPic">
-        <img
-          src="https://lh3.googleusercontent.com/vLy0Y2DcY4nrk3pKcD5rJTg1r-tEw280guVF0yKgKOyMBJh0IIZDVnEZ5k41WELFOPem3exhS8ipuNraCVojYGsJ6PRUfDdfN0WB97yBCLHHQo3JxoZXG8LuNaECBpCwQjjPIxdF"
-          alt=""
-        />
-      </div>
     </section>
-    <section class="recent">
-      <div class="recentHeader">
-        <h2>My Recent Work</h2>
-      </div>
-      <div class="gallery">
-        <img
-          src="https://lh3.googleusercontent.com/3LoOBb1uGP6WhunIXTMh8kqNWs3BgVzWzOKgNiQhL9Tjor9r1CJvv6hALQ0JJVWmXMaOc0B_tlwhRfJ9Rxj-KNU8efZtgvKWDMbN_vJhDjalZCvQFmboSyzRONqYx5PY5IdrewIv"
-          alt=""
-        />
-        <img
-          src="https://lh3.googleusercontent.com/3H5UIFJayslM6s5pNJZyAT3EIUAehYT2Z0Wh6ArCxuNEHS727hwlnQhy0rFzIUlW4RxNq9W9wVOjGMAyC3hUJateRYjFqNtbjNkF01-Tl32yVhNYBCkukkWpspJVqpkvY-V_Iu22"
-          alt=""
-        />
-        <img
-          src="https://lh3.googleusercontent.com/sQrHIVnYKGM1NdxJVihyD6vcLd1Cb6Amp8jlYxCIjYI8eS_LI9VJLK2uvsruiF93zpZM7OW2o76WZiK3Fx32hYuOBCrxJhHAk5Jv8Cr5Z__cvPNlSfS05pjV1GIGE6rRhtD4FqGV"
-          alt=""
-        />
-        <img
-          src="https://lh3.googleusercontent.com/3hsEj8KUxnCw_xUNhbRhj7TtYnTYWIHBahOWc4CRhHmaRZG14J-Cg9T9lF0yyyoNg4Fvq1mDieRmK1BOMgq4G4GvcpZuBW0n4lSSIJjcgPamQtdPWo6H6uyxKlrLaTDRJ2TuL0Ee"
-          alt=""
-        />
-      </div>
+    <section class="recent-images">
+        <div class="title">
+            <h1>Latest Images</h1>
+        </div>
+        <div class="imgs">
+            <div id="grid-item"><img src="./imgs/maternity.jpg" alt=""></div>
+            <div id="grid-item"><img src="./imgs/photosessi.jpg" alt=""></div>
+            <div id="grid-item"><img src="./imgs/sweetsix.jpg" alt=""></div>
+            <div id="grid-item"><img src="./imgs/wedding.jpg" alt=""></div>
+            <div id="grid-item"><img src="./imgs/gallery.jpg" alt=""></div>
+            <div id="grid-item"><img src="./imgs/gallery.jpg" alt=""></div>
+
+
+        </div>
     </section>
     <section class="packages">
-      <div class="packagesHeader">
-        <h2>Packages</h2>
-      </div>
-      <div class="card">
-        <div class="cards">
-          <div class="head">
-            <h1>Wedding</h1>
-          </div>
-          <div class="packageImg">
-            <img
-              src="https://lh3.googleusercontent.com/Zan-JfxVUDAZO3ZUW8QYzcoR7lIpqYUS_h8aqWwd42tJF1k3cZhrFdfGAhgml0wAN2LXuGJ0z3ndlXF1YGacYD_rrvGCHyoilZqWg17J4C5AHVKGRm5_ZHyTq-VtAKuPKYUBkR9L"
-              alt=""
-            />
-            <div class="overlay">
-              <br />
-              <p>
-                Starts<br />
-                $900<br />
-                18 page album<br />
-                100 digitals<br />
-                1 usb<br /><br />
-                <a href="#">Contact</a>
-              </p>
+        <h1 id="title">Packages</h1>
+        <div class="package">
+            <div class="info">
+                <h1>Maternity</h1>
             </div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="head">
-            <h1>Maternity</h1>
-          </div>
-          <div class="packageImg">
-            <img src="./imgs/package/maternity.jpg" alt="" />
-            <div class="overlay">
-              <br />
-              <p>
-                Starts<br />
-                $900<br />
-                18 page album<br />
-                100 digitals<br />
-                1 usb<br /><br />
-                <a href="#">Contact</a>
-              </p>
+            <div class="pack">
+                <img src="./imgs/maternity.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Maternity Packages<br>start at<br>$2000<br><a href="#">More Info</a></div>
+                </div>
+
             </div>
-          </div>
         </div>
-        <div class="cards">
-          <div class="head">
-            <h1>Sweet Sixteen</h1>
-          </div>
-          <div class="packageImg">
-            <img
-              src="https://lh3.googleusercontent.com/rsV5TtJ7pYRzw7kFpKRsRh6MaIkU6ru6uXe4Uq73f24PS4v1COpd-ENZCxSiX1gHu6b5TTiFJt7LNNqALWkWrYxwz-p7c2-8Pd4_0IgieLs_i-zltMH-CUjF3d-IOnAe73Vbs5na"
-              alt=""
-            />
-            <div class="overlay">
-              <br />
-              <p>
-                Starts<br />
-                $900<br />
-                18 page album<br />
-                100 digitals<br />
-                1 usb<br /><br />
-                <a href="#">Contact</a>
-              </p>
+        <div class="package">
+            <div class="info">
+                <h1>Photoshoots</h1>
+
             </div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="head">
-            <h1>Portrait</h1>
-          </div>
-          <div class="packageImg">
-            <img
-              src="https://lh3.googleusercontent.com/bhoR6qZdbvc8wp2zm8dne-Z3lirodr8SzBoaRqTuuLJZsVWAQlmo3nlPi4xBxRAaqR78la2jfWii8voDleda87ixQS87Rrr8CtzKp-H-zBcs2hBSm0LY0nobj79n78h6eNpyzcmK"
-              alt=""
-            />
-            <div class="overlay">
-              <br />
-              <p>
-                Starts<br />
-                $900<br />
-                18 page album<br />
-                100 digitals<br />
-                1 usb<br /><br />
-                <a href="#">Contact</a>
-              </p>
+            <div class="pack">
+                <img src="./imgs/photosessi.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Photo Sessions packages<br>start at<br>$2000<br><a href="#">More Info</a></div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </div>
+        <div class="package">
+            <div class="info">
+                <h1>Sweet Sixteen</h1>
+
+            </div>
+            <div class="pack">
+                <img src="./imgs/sweetsix.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Sweet Sixteen Packages<br>start at<br>$2000<br><a href="#">More Info</a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="package">
+            <div class="info">
+                <h1>Wedding</h1>
+
+            </div>
+            <div class="pack">
+                <img src="./imgs/wedding.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Wedding Packages<br>start at<br>$2000<br><a href="#">More Info</a></div>
+                </div>
+
+            </div>
+        </div>
     </section>
-    <section class="footer">
-      <div class="foot">Mandy's Photo &copy; 2020 by JaviC Dev</div>
-    </section>
-  </body>
+    <footer class="footer">
+        <div id="footer-logo"><img src="./icons/logomandy.png" alt="logo"></div>
+        <div id="footer">Mandys Photography &copy 2020</div>
+        <div id="social-icon">
+            <img src="./icons/iconmonstr-facebook-5-48.png" alt="">
+            <img src="./icons/iconmonstr-instagram-15-48.png" alt="">
+            <img src="./icons/iconmonstr-whatsapp-1-48.png" alt="">
+        </div>
+    </footer>
+    <script>
+
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "225px";
+        }
+    </script>
+</body>
+
 </html>
