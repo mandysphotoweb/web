@@ -15,10 +15,262 @@ $gray-text: #2b2b2b;
 }
 
 @import "global";
+@import "gallery";
+@import "contact";
+
+#mySidenav {
+  display: none;
+}
+
+.main-head {
+  display: none;
+}
+
+.fullView {
+  width: 100%;
+  height: 7vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  img {
+    width: auto;
+    height: 80%;
+  }
+}
+
+.nav {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.active {
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+  color: black;
+  border-radius: 1rem;
+}
+
+.social {
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.socialMedia {
+  width: auto;
+  height: 3vh;
+}
+
+.main {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.bio {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myPic {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.title {
+  width: 50%;
+  height: auto;
+  text-align: center;
+
+  padding-bottom: 2rem;
+}
+
+.aboutMe {
+  width: 70%;
+  height: auto;
+  text-align: justify;
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.recent {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recentHeader {
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  img {
+    height: 80%;
+    width: 23%;
+    object-fit: cover;
+  }
+}
+
+.packages {
+  width: 100%;
+  height: 70vh;
+  padding-bottom: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.packagesHeader {
+  width: 100%;
+  height: 20vh;
+
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  height: 50vh;
+
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cards {
+  width: 320px;
+  height: 320px;
+  border: solid;
+  border-width: thick;
+  border-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.head {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+
+  text-align: center;
+}
+
+.packageImg {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.packageImg:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay {
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: $background-color;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  p {
+    font-size: 1.5rem;
+  }
+  a {
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 7vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot {
+  width: 50%;
+  height: auto;
+  color: white;
+  text-align: center;
+}
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
+  #mySidenav {
+    display: flex;
+  }
+
+  .fullView {
+    display: none;
+  }
   .main-head {
-    width: 100%;
+    width: 100vw;
     height: 6vh;
     background: $gray-text;
     @include flex(center, center, row);
@@ -49,12 +301,12 @@ $gray-text: #2b2b2b;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 110;
     top: 0;
     left: 0;
     background-color: #111;
@@ -73,8 +325,12 @@ $gray-text: #2b2b2b;
     display: block;
     transition: 0.3s;
   }
+
   .social {
-    height: 3rem;
+    margin-left: 50%;
+    height: 2.5rem;
+    width: auto;
+    transform: translateX(-50);
   }
   .sidenav a:hover {
     color: #f1f1f1;
@@ -83,216 +339,177 @@ $gray-text: #2b2b2b;
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 36px;
     font-size: 36px;
-    margin-left: 50px;
   }
-
-  .main-intro {
-    @include flex(flex-start, center, column);
-    width: 100%;
-    height: 100vh;
-
-    overflow: hidden;
-  }
-  .intro-text {
-    @include flex(center, center, column);
-    text-align: center;
+  .main {
     width: 100vw;
-    height: 30%;
-    padding: 1rem 2rem 0 2rem;
-    h1 {
-      font-size: 3rem;
-      font-weight: 200;
-      padding-bottom: 2rem;
-    }
+    height: 85vh;
+    padding: 0;
+  }
+
+  .bio {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .myPic {
+    display: none;
+  }
+
+  .title {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutMe {
+    width: 90%;
+    height: 80%;
+    text-align: justify;
+
     p {
-      text-align: justify;
       font-size: 1.5rem;
     }
   }
-  .intro-img {
+
+  .recent {
     width: 100vw;
-    height: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recentHeader {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .gallery {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     img {
-      width: 100%;
-      height: auto;
+      height: 45%;
+      width: 50%;
       object-fit: cover;
     }
-  }
-  .recent-images {
-    width: 100vw;
-    height: auto;
-    @include flex(center, center, column);
-  }
-  .title {
-    width: 100%;
-    height: 10vh;
-    padding: 1rem;
-    @include flex(center, center, row);
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 300;
-    }
-  }
-  .imgs {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-
-    grid-area: images;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas:
-      "thumbs2 main thumbs5"
-      "thumbs3 main thumbs6"
-      "thumbs4 main thumbs7";
-  }
-  #grid-item:first-child {
-    grid-column-start: main;
-    grid-column-end: thumbs6;
-    grid-row-start: thumbs3;
-    grid-row-end: thumbs3;
-  }
-  #grid-item:nth-child(2) {
-    grid-column-start: thumbs2;
-    grid-column-end: main;
-    grid-row-start: thumbs2;
-    grid-row-end: thumbs2;
-  }
-  #grid-item:nth-child(3) {
-    grid-area: thumbs3;
-  }
-  #grid-item:nth-child(4) {
-    grid-area: thumbs7;
-  }
-
-  #grid-item:nth-child(5) {
-    grid-area: thumbs5;
-  }
-  #grid-item:nth-child(6) {
-    grid-column-start: thumbs2;
-    grid-column-end: main;
-    grid-row-start: thumbs4;
-    grid-row-end: main;
-  }
-
-  #grid-item img {
-    box-sizing: border-box;
-    display: block;
-
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  #grid-item:first-child img {
-    box-sizing: border-box;
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
   }
   .packages {
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
-  #title {
-    text-align: center;
-    padding: 1rem 0rem 1rem 0;
-    font-size: 4rem;
-    font-weight: 300;
-  }
-  .package {
-    margin-bottom: 2rem;
+
+  .packagesHeader {
     width: 100vw;
-    height: 250px;
-  }
-
-  .info {
-    background: $gradient;
-    height: 40px;
-    width: 100%;
-
-    padding: 0.5rem;
-    h1 {
-      font-weight: 300;
-      text-align: center;
+    height: 10%;
+    text-align: center;
+    h2 {
+      font-size: 2.5rem;
     }
   }
-  .pack {
-    height: 210px;
-    width: 100%;
-    position: relative;
 
+  .card {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .cards {
+    width: 50vw;
+    height: 40%;
+    border: solid;
+    border-width: thick;
+    border-color: white;
+    border-radius: 0.5rem;
+  }
+
+  .head {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .packageImg {
+    width: 100%;
+    height: 90%;
+    position: relative;
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      display: none;
     }
   }
 
   .overlay {
+    color: white;
+    text-align: center;
     position: absolute;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    background-color: $background-color;
+    overflow: hidden;
     width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: $gray-text;
-  }
-  .pack:hover .overlay {
-    opacity: 1;
-  }
-  .text {
-    color: white;
-    font-size: 2rem;
-    font-weight: 300;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    height: 100%;
+
+    p {
+      font-size: 1.5rem;
+    }
     a {
-      font-size: 1rem;
+      font-size: 1.3rem;
       text-decoration: underline;
     }
   }
-  .footer {
-    position: sticky;
 
+  .footer {
     width: 100vw;
-    height: 6vh;
-    background: $gray-text;
-    @include flex(space-evenly, center, row);
+    height: 7vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  #footer-logo {
-    width: 1fr;
-    height: 5vh;
-    img {
-      height: 100%;
-    }
-  }
-  #footer {
-    width: 1fr;
-    height: 5vh;
-    padding-top: 1rem;
+
+  .foot {
+    width: 50%;
+    height: auto;
     color: white;
-  }
-  #social-icon {
-    width: 1fr;
-    height: 5vh;
-    padding-top: 1rem;
-    img {
-      padding-right: 1rem;
-      height: 1.5rem;
-    }
+    text-align: center;
   }
 }
