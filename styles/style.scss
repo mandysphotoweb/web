@@ -190,8 +190,8 @@ $gray-text: #2b2b2b;
 }
 
 .cards {
-  width: 320px;
-  height: 320px;
+  width: 22%;
+  height: 90%;
   border: solid;
   border-width: thick;
   border-color: white;
@@ -203,6 +203,10 @@ $gray-text: #2b2b2b;
   width: 100%;
   height: 10%;
   background-color: white;
+  overflow: hidden;
+  h1 {
+    font-size: 2rem;
+  }
 
   text-align: center;
 }
@@ -261,7 +265,7 @@ $gray-text: #2b2b2b;
   text-align: center;
 }
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   #mySidenav {
     display: flex;
   }
@@ -344,7 +348,7 @@ $gray-text: #2b2b2b;
   }
   .main {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     padding: 0;
   }
 
@@ -364,7 +368,7 @@ $gray-text: #2b2b2b;
 
   .title {
     width: 100%;
-    height: 20%;
+    height: 15%;
     text-align: center;
     padding: 0;
     display: flex;
@@ -377,7 +381,7 @@ $gray-text: #2b2b2b;
 
   .aboutMe {
     width: 90%;
-    height: 80%;
+    height: 85%;
     text-align: justify;
 
     p {
